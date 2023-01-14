@@ -76,14 +76,14 @@
 
 
 # Pop
-numbers = ['a','b','c','d']
+# numbers = ['a','b','c','d']
 
-print(numbers)
-pop = numbers.pop()
+# print(numbers)
+# pop = numbers.pop()
 
-print(numbers)
+# print(numbers)
 
-print (pop)
+# print (pop)
 
 # Find index array
 
@@ -97,9 +97,9 @@ print (pop)
 
 
 #Dictionary 
-point = {'x': { 'x1':1,'x2':2 },'y': 2}
-print (point)
-point['z'] = {'userName': 'Khang','Age' : 18, 'country': { 'a':'uncle Ho','b' : 'Ha Noi' }} 
+# point = {'x': { 'x1':1,'x2':2 },'y': 2}
+# print (point)
+# point['z'] = {'userName': 'Khang','Age' : 18, 'country': { 'a':'uncle Ho','b' : 'Ha Noi' }} 
 # print(point)
 # point['z'] = "'z1': {'username': khang}"
 # print(point['z']['userName'])
@@ -109,4 +109,97 @@ point['z'] = {'userName': 'Khang','Age' : 18, 'country': { 'a':'uncle Ho','b' : 
 # print(point.keys())
 # print(point.values())
 
-print(point.keys('x1'))
+# print(point.keys('x1'))
+
+# import datetime
+
+# x = datetime.datetime(2016,6,2)
+
+# print (x.strftime("%d/%m/%Y"))
+
+# x = min(5, 10, 25)
+# y = max(5, 10, 25)
+
+# print(x)
+# print(y)
+
+# import json
+
+# test = json.loads('{ "name":"Khang","age":15 }')
+# textJson = { 'name':'Khang','age':18 }
+# fruits = ["apple", "bananas"]
+
+
+# print (json.dumps(fruits))
+
+# import re
+
+# txt = "The rain in Spain"
+# x = re.search("^The.*Spain$", txt)
+
+# if x:
+#     print("Đúng")
+# else:
+#     print("Sai")
+
+
+# y = re.findall("i",txt)
+
+# for char in y:
+#     print (char)
+
+
+
+# import camelcase
+
+# c = camelcase.CamelCase()
+
+# txt = "hello world"
+
+# print(c.hump(txt))
+
+# price = 49
+# percent = 50
+# txt = "The price is {} dollars {} percent"
+# print(txt.format(price,percent))
+
+
+# f = open("text.txt","r")
+# f.write("aaowpawaw")
+
+# print(f.read())
+
+# import os
+# if os.path.exists("demo.txt"):
+#     os.remove("demo.txt")
+# else:
+#     os.mkdir("demo.txt")
+
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# mydataset = {
+#   'cars': ["BMW", "Volvo", "Ford"],
+#   'passings': [3, 7, 2]
+# }
+
+# myvar = pandas.DataFrame(mydataset)
+
+# print(myvar)
+
+
+df = pd.read_csv("data.csv")
+# newdf = df.dropna()
+# newdf['Date'] = pd.to_datetime(df['Date'])
+# # newdf.loc[7,'Duration'] = 45
+# for x in newdf.index:
+#   if newdf.loc[x, "Duration"] > 120:
+#     newdf.loc[x, "Duration"] = 60
+
+#Drop duplicate
+# newdf.drop_duplicates(inplace=True)
+
+# print(newdf.to_string())
+df.plot()
+plt.show()
